@@ -8,6 +8,7 @@ public class Pro1{
     int j=sc.nextInt();
     int m=sc.nextInt();
     int p=sc.nextInt();
+    sc.close();
     if(n>0 && k>0 && j>0 && m>0 && p>0){
       int a=0,b=0;
       a=(m/k);

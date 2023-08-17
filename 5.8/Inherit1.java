@@ -4,6 +4,7 @@ public class Inherit1 {
         Scanner sc=new Scanner(System.in);
         String s1=sc.nextLine();
         String s2=sc.nextLine();
+        sc.close();
         String st1="Mani";
         String st2="Mani";
         System.out.println(s1==s2);

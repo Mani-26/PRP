@@ -5,6 +5,7 @@ public class pro2 {
         int amt = 0;
         while (true) {
             int age = sc.nextInt();
+            sc.close();
             if (age > 0 && age <= 120) {
                 if (age < 17)
                     amt += 200;

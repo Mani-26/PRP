@@ -3,6 +3,7 @@ public class Prog2{
   public static void main(String[]args){
     Scanner sc=new Scanner(System.in);
     String str=sc.next().toLowerCase();
+    sc.close();
     int n=str.length();
     if(n>0&&n<=4){
       int a=0,b=0,d=0,ans=0;//12ba

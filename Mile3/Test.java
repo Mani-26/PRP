@@ -5,6 +5,7 @@ public class Test {
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
         // int opt=sc.nextInt();
+        sc.close();
         String ans="";
         String arr[]=str.split(" ");
         // if (opt==0) {

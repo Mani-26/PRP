@@ -4,6 +4,7 @@ public class Prog1 {
         Scanner sc = new Scanner(System.in);
         int x = 0, y = 0, c = 10;
         int n = sc.nextInt();
+        sc.close();
         if (n > 0) {
             for (int i = 0; i < n; i++) {
                 int a = i % 5;

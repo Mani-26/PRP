@@ -4,6 +4,7 @@ public class Prog6 {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         int opt = sc.nextInt();
+        sc.close();
         System.out.println(findAns(str, opt));
     }
     public static String findAns(String input1,int input2){
