@@ -11,10 +11,11 @@ public class Prog6 {
         String arr[]=input1.split(" ");
         for (String s:arr) {
             for (int i = (s.length()-1); i >= 0; i--) {
-                ans+=s.charAt(i);
+                ans=ans+s.charAt(i);
             }
             ans+=" ";
         }
+        if(input2==1){
         for (int j = 0; j <input1.length(); j++) {
             char c=input1.charAt(j);
             char d=ans.charAt(j);
@@ -25,8 +26,7 @@ public class Prog6 {
                 d=Character.toLowerCase(d);
             }   
             ans2+=d;
-        }
-        if(input2==1){
+        }      
             return ans2;
         }
         return ans;

@@ -8,31 +8,31 @@ public class Prog7 {
     public static int findAns(String input1){
         List<Integer> num=new LinkedList<>();       
         List<Character> opt=new LinkedList<>();
-        for (int i = 0; i < input1.length(); i++) {
+        for (int i = 0; i < input1.length(); i++) {//i*-t5s-t8h1e4birds
             char c=input1.charAt(i);
-            if (Character.isDigit(c)) {
-                num.add((c-48));
+            if (Character.isDigit(c)) { //if(c>='0'&&c<='9')
+                num.add((c-'0'));
             }
             if(c=='+'||c=='-'||c=='/'||c=='*'){
                 opt.add(c);
             }
-        }
+        }//num={5,8,1,4}//opt={*,-,-}
         int a=num.get(0),b=0;
-        for (int i = 0; i < opt.size(); i++) {
-            b=num.get(i+1);
-            char op=opt.get(i);
-            switch (op) {
+        for (int i = 0; i < opt.size(); i++) {//3
+            b=num.get(i+1);//4 //a=35
+            char c=opt.get(i);// -
+            switch (c) {
                 case '+':
-                    a+=b;
+                    a=a+b;
                     break;
                 case '-':
-                    a-=b;
+                    a=a-b;
                     break;
                 case '/':
                     a/=b;
                     break;
                 case '*':
-                    a*=b;
+                    a=a*b;
                     break;
                 default:
                     break;
