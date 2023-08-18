@@ -26,7 +26,7 @@ public class Prog8 {
                 out+=input1.charAt(0)+input2;
             }
         }   
-        String temp=""+input3;//560037//2
+        String temp=""+input3;
         out+=temp.charAt(input4-1);
         out+=temp.charAt(temp.length()-input4);
         String s="";
