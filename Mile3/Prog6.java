@@ -20,16 +20,14 @@ public class Prog6 {
         for (int j = 0; j <input1.length(); j++) {
             char c=input1.charAt(j);
             char d=ans.charAt(j);
-            if (Character.isUpperCase(c)) {
+            if(Character.isUpperCase(c))
                 d=Character.toUpperCase(d);
-            }
-            else {
+            if(Character.isLowerCase(c))
                 d=Character.toLowerCase(d);
-            }   
             ans2+=d;
         }      
-            return ans2;
+            return ans2.trim();
         }
-        return ans;
+        return ans.trim();
     }
 }
